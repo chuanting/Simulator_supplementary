@@ -16,10 +16,10 @@ fed_with_wireless_loss = mean(fed_loss{2:end, :}, 2);
 centralized_loss = trafficcentralizedguoqing.train_loss;
 fed_no_wireless_loss = trafficflguoqing.train_loss;
 
-plot(centralized_loss, 'ko-.', 'linewidth', linewidth, 'markersize', markersize);
+plot(centralized_loss, 'ko-.', 'linewidth', linewidth,'markerfacecolor', [0, 0, 0]/255, 'markersize', markersize);
 hold on;
-plot(fed_no_wireless_loss, 'bs-.', 'linewidth', linewidth, 'markersize', markersize)
-plot(fed_with_wireless_loss, 'r^-.', 'linewidth', linewidth, 'markersize', markersize)
+plot(fed_no_wireless_loss, 'bs-.', 'linewidth', linewidth,'markerfacecolor', [0, 0, 255]/255, 'markersize', markersize)
+plot(fed_with_wireless_loss, 'r^-.', 'linewidth', linewidth,'markerfacecolor', [255, 0, 255]/255, 'markersize', markersize)
 
 grid on;
 legend('Centralized', 'Federated (No wireless)', 'Federated (With wireless)')
