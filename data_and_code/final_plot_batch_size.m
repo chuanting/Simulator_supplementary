@@ -19,7 +19,7 @@ semilogx(x, threshold_2{:, 3}, 'bs-.', 'linewidth', linewidth, 'markerfacecolor'
 semilogx(x, threshold_3{:, 3}, 'r^-.', 'linewidth', linewidth, 'markerfacecolor', [255, 0, 0]/255, 'markersize', markersize)
 xticks(x)
 grid on;
-% legend('loss < 0.2', 'loss < 0.15', 'loss < 0.1')
+legend('loss < 0.2', 'loss < 0.15', 'loss < 0.1')
 xlabel('Number of clients')
 ylabel('Throughput (Mb/s)')
 
@@ -31,7 +31,7 @@ semilogx(x, threshold_2{:, 4}, 'bs-.', 'linewidth', linewidth, 'markerfacecolor'
 semilogx(x, threshold_3{:, 4}, 'r^-.', 'linewidth', linewidth, 'markerfacecolor', [255, 0, 0]/255, 'markersize', markersize)
 xticks(x)
 grid on;
-% legend('loss < 0.2', 'loss < 0.15', 'loss < 0.1')
+legend('loss < 0.2', 'loss < 0.15', 'loss < 0.1')
 xlabel('Number of clients')
 ylabel('Energy (J)')
 
@@ -43,9 +43,9 @@ semilogx(x, threshold_2{:, 5}, 'bs-.', 'linewidth', linewidth, 'markerfacecolor'
 semilogx(x, threshold_3{:, 5}, 'r^-.', 'linewidth', linewidth, 'markerfacecolor', [255, 0, 0]/255, 'markersize', markersize)
 xticks(x)
 grid on;
-% legend('loss < 0.2', 'loss < 0.15', 'loss < 0.1')
+legend('loss < 0.2', 'loss < 0.15', 'loss < 0.1')
 xlabel('Number of clients')
-ylabel('Energy (J)')
+ylabel('Time (s)')
 
 
 
